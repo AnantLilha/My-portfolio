@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anant Portfolio| My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anant Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">My projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsec">Hi, My name is <span class="purple">Anant</span>
+                <div>& i am a outstanding </div>
+                <span id="element" class="purple"></span>
+
+            </div>
+            <div class="rightsec"><img src="dev.png" alt="">
+
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondsection" id="about">
+            <h1>About Me</h1>
+            <div class="leftsec2">
+                I’m Anant Lilha, a passionate teenage web developer focused on building modern, user-friendly web
+                applications. Currently learning JavaScript, I enjoy turning ideas into functional and visually
+                appealing websites. I am dedicated to improving my skills, exploring new technologies, and creating
+                efficient solutions. My goal is to grow as a professional developer through continuous learning and
+                real-world project experience.
+            </div>
+            <div class="rightsec2"><img src="my self.jpeg" alt=""></div>
+
+        </section>
+
+        <hr>
+
+        <section class="thirdsection" id="projects">
+            <h1>My Projects</h1>
+
+            <div class="buttons">
+                <button> <a href="https://anantlilha.github.io/My-Id-Card/">Project 1 </a></button>
+                <button><a href="https://anantlilha.github.io/Chandan-Automobiles/">Project2</a></button>
+                <button><a href="https://anantlilha.github.io/portfolio/">Project3</a></button>
+                <button><a href="/">Project4</a></button>
+                <button><a href="/">Project5</a></button>
+                <button><a href="/">Project6</a></button>
+            </div>
+        </section>
+        <hr>
+
+        <section class="forthsection" id="contact">
+            <h1>Contact Me</h1>
+
+            <form class="form" action="https://formspree.io/f/xaqplyrb" method="POST">
+
+                <h2>Contact Me</h2>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Description:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="summit">Submit</button>
+
+            </form>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'Learner', 'Student'],
+                typeSpeed: 50,
+            });
+        </script>
+</body>
+
+</html>

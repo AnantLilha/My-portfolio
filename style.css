@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding-top: 11vh;
+}
+
+
+nav {
+    background-color: rgb(18, 18, 62);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 11vh;
+
+    position: fixed;   /* ✅ FIXED instead of sticky */
+    top: 0;
+    left: 0;
+    width: 100%;       /* full width */
+    z-index: 1000;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin: 0 2vw;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+
+
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1vh 0;
+    /* border: 1px solid white; */
+
+
+
+}
+
+.firstsection>div {
+    width: 35%;
+}
+
+.leftsec {
+    font-size: 3rem;
+
+
+}
+
+.rightsec img {
+    width: 80%;
+    margin: 38px;
+
+}
+
+.purple {
+    color: blueviolet;
+}
+
+hr {
+    border: 0;
+    height: 0.1vh;
+    margin: 5vh 16vw;
+    background-color: white;
+}
+
+.secondsection {
+
+
+    height: 27vh;
+    /* border: 1px solid white; */
+
+
+
+
+}
+
+.secondsection h1 {
+    left: 5vw;
+    top: 3vh;
+    position: relative;
+    display: flex;
+
+    width: 14vw;
+
+}
+
+.leftsec2 {
+    /* border: 1px solid white; */
+    height: 15vh;
+    width: 60%;
+    left: 5vw;
+    top: 5vh;
+    display: flex;
+    position: relative;
+}
+
+.rightsec2 {
+    /* border: 1px solid white; */
+    height: 27vh;
+    width: 15%;
+    position: relative;
+    top: -12vh;
+    left: 75vw;
+}
+
+.rightsec2 img {
+    height: 30vh;
+    width: 15vw;
+    top: -9vh;
+    left: -2vw;
+
+    position: relative;
+}
+
+#hr {
+    position: relative;
+
+}
+
+.thirdsection {
+    height: auto;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+/* Title */
+.thirdsection h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* 🔥 MAIN GRID: 3 columns */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+
+    width: 60%;
+
+    margin: 10vh 20vw;
+}
+
+/* BUTTON STYLE */
+.thirdsection button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    /* 🔥 NEW BACKGROUND */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.thirdsection button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.thirdsection h1 {
+    left: 5vw;
+    top: 3vh;
+    position: relative;
+    display: flex;
+
+    width: 14vw;
+}
+
+.thirdsection button a {
+    text-decoration: none;
+    color: white;
+}
+
+.forthsection {
+    /* background-color: orangered; */
+    height: 85vh;
+
+
+}
+
+.forthsection>h1 {
+    left: 44vw;
+    top: 3vh;
+    position: relative;
+    display: flex;
+
+    width: 14vw;
+}
+
+.form {
+    background-color: wheat;
+    /* white background */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* FIXED (you wrote 'column') */
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+    width: 30vw;
+    margin: 11vh auto;
+}
+
+/* Inputs + textarea styling */
+.form input,
+.form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 14px;
+}
+
+/* Big description box */
+.form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Button styling */
+.summit {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.summit:hover {
+    background-color: #45a049;
+}
